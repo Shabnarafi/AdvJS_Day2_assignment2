@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<script>
+function outerFunction(x) {
+  return function(y) {
+    return x * y;
+  };
+}
+
+var multiply5 = outerFunction(5);
+var multiply10 = outerFunction(10);
+var multiply5 = outerFunction(6);
+
+console.log(multiply5(2));  
+console.log(multiply10(2)); 
+</script>
+</body>
+</html>
